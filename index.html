@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Caculate Web</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand logo" href="#">
+                <img src="./img/a88e69e018664228884c17c86f0f799a.png" alt="">
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto menu bg-success">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <span><i class="fa-solid fa-user"></i></span>
+                            Personal
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span><i class="fa-solid fa-users"></i></span>
+                            Community
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- carousel -->
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            </div>
+            <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+
+
+    <!-- bai tap -->
+    <section class="container my-5 py-5" id="baitap">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu3">Menu 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu4">Menu 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu5">Menu 5</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane container active text-center my-3" id="home">Caculate Web công cụ tính toán thuận tiện
+                nhất, giúp mọi người có thể tính tiền lương, đổi ngoại tệ và tính toán số học</div>
+            <!-- bài tập 1 -->
+            <div class="tab-pane container fade my-4" id="menu1">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Tính tiền lương nhân viên dựa vào số ngày công</p>
+                        <span>Nhập Số Ngày Công Vào Đây: </span>
+                        <input id="songaycong" type="text">
+                        <button id="btntienluong" class="btn btn-success">Tính Tiền</button>
+                        <div id="thongbao"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- bài tập 2 -->
+            <div class="tab-pane container fade my-4" id="menu2">
+                <p>Tính tổng của các số thực:</p>
+                <div>
+                    <span>Nhập Số thực 1: </span>
+                    <input id="n1" type="text"> <br>
+                </div>
+                <div>
+                    <span>Nhập Số thực 2: </span>
+                    <input id="n2" type="text"> <br>
+                </div>
+                <div>
+                    <span>Nhập Số thực 3: </span>
+                    <input id="n3" type="text"> <br>
+                </div>
+                <div>
+                    <span>Nhập Số thực 4: </span>
+                    <input id="n4" type="text"> <br>
+                </div>
+                <div>
+                    <span>Nhập Số thực 5: </span>
+                    <input id="n5" type="text"> <br>
+                </div>
+                <button id="btnTrungBinh" class="btn btn-warning">Tính Trung Bình</button>
+                <div id="thongbao2"></div>
+            </div>
+            <!-- bài tập 3 -->
+            <div class="tab-pane container fade my-4" id="menu3">
+                <p>Đổi ngoại tệ đô la:</p>
+                <span>Nhập Số $: </span>
+                <input id="soDo" type="text">
+                <button id="btnDoiTien" class="btn btn-success">Đổi Tiền</button>
+                <div id="thongbao3"></div>
+            </div>
+            <!-- bài tập 4 -->
+            <div class="tab-pane container fade my-4" id="menu4">
+                <p>Tính chu vi và diện tích hình chữ nhật</p>
+                <span>Nhập chiều dài: </span>
+                <input id="chieuDai" type="text">
+                <span>Nhập chiều rộng: </span>
+                <input id="chieuRong" type="text">
+                <button id="btnTinhHCM" class="btn btn-success">Tính</button>
+                <div id="thongbao4"></div>
+                <div id="thongbao5"></div>
+            </div>
+            <!-- bài tập 5 -->
+            <div class="tab-pane container fade my-4" id="menu5">
+                <p>Tính tổng 2 ký số bất kỳ</p>
+                <span>Nhập 2 ký số: </span>
+                <input id="kySo" type="text">
+                <button id="btnTong" class="btn btn-success">Tổng</button>
+                <div id="thongbao6"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container text-center text-white">
+            <div class="footer__main">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="footer__copies">
+                <p>© 2021 CyberPortfolio. All rights reserved | Designed by <a href="#">CyberSoft</a>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

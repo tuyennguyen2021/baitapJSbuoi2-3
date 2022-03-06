@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  color: #212529;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration-color: none;
+}
+
+/* header */
+
+header .logo img {
+  width: 130px;
+}
+
+.menu li {
+  margin: 0 1rem;
+  align-self: center;
+}
+
+.menu li a {
+  text-transform: capitalize;
+  transition: all 0.5s;
+  font-weight: 600;
+  color: #fff !important;
+}
+
+.menu li:after {
+  content: "";
+  background-color: #f5a01a;
+  width: 0;
+  height: 3px;
+  display: block;
+  transition: all 0.5s;
+}
+
+.menu li.active > a {
+  color: #fff !important;
+}
+
+.menu li.active::after,
+.menu li:hover::after {
+  width: 100%;
+}
+
+.menu li a span i {
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+ul.menu {
+  position: relative;
+  height: 60px;
+}
+
+/* carousel */
+
+.carousel-item {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url("./../img/MicrosoftTeams-image\ \(16\).png");
+}
+.carousel-item:nth-child(2) {
+  background-image: url("./../img/Online\ Banner-02.jpeg");
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url("./../img/vnfinlead_1600x330-vn.jpeg");
+}
+
+/* bai tap */
+
+.ketquain {
+  background-color: aqua;
+  width: 50%;
+  color: red;
+  font-size: 40px;
+}
+
+#baitap {
+  position: relative;
+}
+
+#baitap ul li a {
+  color: #212529;
+}
+
+#baitap ul li a.active:hover,
+#baitap ul li a:hover {
+  color: #35a22c;
+}
+
+#menu2 div {
+  margin: 20px 0;
+}
+
+/* footer */
+
+footer {
+  background-color: #222;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.footer__main i {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 50%;
+  border: 1px solid #454545;
+  transition: all 0.5s;
+  margin-right: 10px;
+}
+
+.footer__main i:hover {
+  color: #35a22c;
+  border-color: #35a22c;
+}
+
+footer a,
+footer p {
+  color: #aaa;
+}
+
+.footer__copies {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #454545;
+}
+
+.footer__copies a:hover {
+  color: #35a22c;
+}
